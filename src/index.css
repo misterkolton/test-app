@@ -1,13 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap");
+
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Oxygen", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(#333, #222);
+  background-position: cover;
+  height: 100%;
+  color: white;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+input {
+  color: white;
+  background: transparent;
+}
+
+.backdrop {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 745px;
+}
+
+.detail-details {
+  background: white;
+  position: relative;
+  z-index: 10;
+  color: #333;
+  margin-top: 400px;
+  display: flex;
+  text-align: left;
+  gap: 20px;
+  padding: 0 0 20px 20px;
+}
+
+.detail-poster {
+  position: relative;
+  margin-top: -160px;
+  max-height: 515px;
+
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+#title {
+  font-family: "Oxygen", sans-serif;
+  background-attachment: fixed;
+  background: #333;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 18px 0 0 18px;
+
+  /* box-shadow: 0 8px 6px -6px black; */
+
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+#genres {
+  list-style: none;
 }
